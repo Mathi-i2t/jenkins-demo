@@ -48,19 +48,5 @@ pipeline {
             }
         }
     }
-    // Executes some logic after all stages are executed.
-    post { 
-        //Always executes whether the build is success or failed
-        always {
-
-        }
-        //Only if the build succeeded
-        success {
-
-        }
-        //Only if the build fails
-        failure {
-
-        }
-    }
+    
 }
