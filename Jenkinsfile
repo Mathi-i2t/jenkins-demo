@@ -12,8 +12,6 @@ pipeline {
                     echo "building app..."
                    
                     echo "Starting docker..."
-                    service docker start
-                    echo "Docker has been started!"
 
                     echo "Building image..."
                     IMAGE=mathi12/resume
