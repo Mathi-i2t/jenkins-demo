@@ -10,17 +10,10 @@ pipeline {
                 sh '''
                     #!/bin/bash
                     echo "building app..."
-                    systemctl show --property ActiveState docker | grep inactive
-                    ACTIVESTATE=$(echo $?)
-
-                    if [ $ACTIVESTATE != 0 ]
-                    then
-                    echo "Docker is in active state!"
-                    else 
+                   
                     echo "Starting docker..."
                     service docker start
                     echo "Docker has been started!"
-                    fi
 
                     echo "Building image..."
                     IMAGE=mathi12/resume
