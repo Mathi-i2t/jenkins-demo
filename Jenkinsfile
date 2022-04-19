@@ -16,6 +16,7 @@ pipeline {
                     echo "Building image..."
                     IMAGE=mathi12/resume
                     TAG=2.0
+                    cd
                     cd Desktop/website
                     docker build -t $IMAGE:$TAG .
                     echo "Image has been successfully built."
