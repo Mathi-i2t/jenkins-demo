@@ -18,7 +18,7 @@ pipeline {
                     TAG=2.0
                     cd
                     cd Desktop/website
-                    docker build -t $IMAGE:$TAG .
+                    docker build -t $IMAGE:$TAG /home/mathi/Desktop/website
                     echo "Image has been successfully built."
                 '''
             }
