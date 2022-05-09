@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-                    echo "building app.."
+                    echo "building app..."
                    
                     echo "Starting docker..."
 
@@ -25,7 +25,7 @@ pipeline {
         stage("test") {
 
             steps {
-                echo "testing app.."
+                echo "testing app..."
             }
         }
         
